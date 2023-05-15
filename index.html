@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="header ">
+        <div class="menu center">
+            <nav class="nav_menu center-1">
+                <div class="header_menu">
+                    <a href="#" class="header-menu_logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36.5083 8.70613C32.9048 3.44887 26.8551 0 20 0C8.95431 0 0 8.9543 0 20C0 21.607 0.189533 23.1697 0.547447 24.667L10.7322 14.4822C11.7085 13.5059 13.2915 13.5059 14.2678 14.4822L22.5 22.7145L36.5083 8.70613Z" fill="#EF2A82"/>
+                            <path d="M38.8854 13.4001L24.2678 28.0178C23.2915 28.9941 21.7085 28.9941 20.7322 28.0178L12.5 19.7855L2.53418 29.7514C5.9555 35.8662 12.495 40 20 40C31.0457 40 40 31.0457 40 20C40 17.6874 39.6075 15.4664 38.8854 13.4001Z" fill="#EF2A82"/>
+                        </svg>
+
+                        <svg width="119" height="17" viewBox="0 0 119 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.8084 13.0561H5.60223L4.69305 16.0001H0.634216L6.414 0.240967H9.98578L15.8089 16.0001H11.7284L10.8084 13.0561ZM6.51141 10.1229H9.89919L8.19989 4.65698L6.51141 10.1229Z" fill="white"/>
+                            <path d="M30.1284 16.0001H26.351L20.7661 6.19393V16.0001H16.967V0.240967H20.7661L26.3402 10.0471V0.240967H30.1284V16.0001Z" fill="white"/>
+                            <path d="M41.6772 13.0561H36.471L35.5619 16.0001H31.503L37.2828 0.240967H40.8546L46.6777 16.0001H42.5972L41.6772 13.0561ZM37.3802 10.1229H40.768L39.0687 4.65698L37.3802 10.1229Z" fill="white"/>
+                            <path d="M51.6349 13.0777H58.2481V16.0001H47.8358V0.240967H51.6349V13.0777Z" fill="white"/>
+                            <path d="M62.5883 7.08146L65.489 0.240967H69.5912L64.5149 10.3394V16.0001H60.6617V10.3394L55.5963 0.240967H59.6768L62.5883 7.08146Z" fill="white"/>
+                            <path d="M83.3046 3.17415H78.5747V16.0001H74.7757V3.17415H70.1323V0.240967H83.3046V3.17415Z" fill="white"/>
+                            <path d="M88.9653 16.0001H85.1771V0.240967H88.9653V16.0001Z" fill="white"/>
+                            <path d="M104.356 10.6641C104.306 11.7609 104.01 12.7314 103.469 13.5756C102.928 14.4126 102.166 15.062 101.185 15.5238C100.211 15.9857 99.0962 16.2166 97.8407 16.2166C95.7698 16.2166 94.139 15.5419 92.9484 14.1925C91.7578 12.8432 91.1625 10.9383 91.1625 8.4777V7.69841C91.1625 6.15424 91.4295 4.8049 91.9635 3.65039C92.5047 2.48866 93.2803 1.59391 94.2905 0.966146C95.3007 0.331163 96.4697 0.0136719 97.7974 0.0136719C99.7095 0.0136719 101.246 0.518772 102.408 1.52897C103.57 2.53196 104.23 3.91737 104.389 5.68522H100.601C100.572 4.72553 100.33 4.03643 99.8755 3.61792C99.4209 3.19941 98.7282 2.99015 97.7974 2.99015C96.8521 2.99015 96.1594 3.34372 95.7193 4.05086C95.2791 4.758 95.0482 5.88726 95.0265 7.43864V8.55347C95.0265 10.2347 95.2358 11.4361 95.6543 12.1577C96.08 12.8793 96.8088 13.2401 97.8407 13.2401C98.7138 13.2401 99.3812 13.0344 99.843 12.6231C100.305 12.2118 100.55 11.5588 100.579 10.6641H104.356Z" fill="white"/>
+                            <path d="M114.282 11.8114C114.282 11.2558 114.083 10.8228 113.686 10.5125C113.297 10.2023 112.608 9.88116 111.619 9.54924C110.631 9.21731 109.822 8.89621 109.195 8.58594C107.153 7.58295 106.132 6.20475 106.132 4.45133C106.132 3.57823 106.384 2.80976 106.889 2.14591C107.401 1.47485 108.123 0.955322 109.054 0.587321C109.985 0.212104 111.031 0.0244954 112.193 0.0244954C113.326 0.0244954 114.339 0.226535 115.234 0.630615C116.136 1.0347 116.836 1.61195 117.334 2.36239C117.832 3.1056 118.081 3.95706 118.081 4.91675H114.292C114.292 4.27455 114.094 3.77667 113.697 3.4231C113.308 3.06953 112.777 2.89274 112.106 2.89274C111.428 2.89274 110.89 3.04427 110.493 3.34733C110.104 3.64318 109.909 4.022 109.909 4.48381C109.909 4.88789 110.125 5.25589 110.558 5.58781C110.991 5.91252 111.753 6.25166 112.842 6.60522C113.932 6.95158 114.826 7.3268 115.526 7.73088C117.229 8.71221 118.081 10.0652 118.081 11.7897C118.081 13.1679 117.561 14.2503 116.522 15.0368C115.483 15.8233 114.058 16.2166 112.247 16.2166C110.97 16.2166 109.812 15.9893 108.772 15.5347C107.741 15.0729 106.961 14.4451 106.435 13.6514C105.915 12.8504 105.655 11.9304 105.655 10.8914H109.465C109.465 11.7356 109.682 12.3598 110.115 12.7638C110.555 13.1607 111.266 13.3591 112.247 13.3591C112.875 13.3591 113.369 13.2256 113.73 12.9587C114.098 12.6845 114.282 12.302 114.282 11.8114Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <ul class="header-menu_list">
+                        <li class="header-menu_item">
+                            <a href="#" class="header-menu_link">Products</a>
+                        </li>
+                        <li class="header-menu_item">
+                            <a href="#" class="header-menu_link">Pricing</a>
+                        </li>
+                        <li class="header-menu_item">
+                            <a href="#" class="header-menu_link">FAQ</a>
+                        </li>
+                        <li class="header-menu_item">
+                            <a href="#" class="header-menu_link">Blog</a>
+                        </li>
+                        <li class="header-menu_item">
+                            <a href="#" class="header-menu_link">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_subscription">
+                    <a href="#" class="header-subscription_link header-menu_link">Sign in</a>
+                    <button class="header-subscription_btn">Sign Up</button>
+                </div>
+            </nav>
+            <div class="menu-switch_mobile">
+                <label for="menu-switch">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="3" width="24" height="3" fill="#8794BA"/>
+                        <rect y="11" width="24" height="3" fill="#8794BA"/>
+                        <rect y="19" width="24" height="3" fill="#8794BA"/>
+                    </svg>
+                </label>
+                <input id="menu-switch" type="checkbox">
+                <a href="#" class="header-subscription_link">Sign in</a>
+                <nav class="nav-menu_switch">
+                    <ul class="header-menu-switch_list">
+                        <li class="header-menu-switch_item">
+                            <a href="#" class="header-menu-switch_link header-menu_link">Products</a>
+                        </li>
+                        <li class="header-menu-switch_item">
+                            <a href="#" class="header-menu-switch_link header-menu_link">Pricing</a>
+                        </li>
+                        <li class="header-menu-switch_item">
+                            <a href="#" class="header-menu-switch_link header-menu_link">FAQ</a>
+                        </li>
+                        <li class="header-menu-switch_item">
+                            <a href="#" class="header-menu-switch_link header-menu_link">Blog</a>
+                        </li>
+                        <li class="header-menu-switch_item">
+                            <a href="#" class="header-menu-switch_link header-menu_link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>    
+
+        <section class="header_opportunities center">
+            <div class="header-opportunities_text">
+                <h2 class="opportunities-text_tittle">Monitor your business on real-time dashboard</h2>
+                <p class="opportunities-text_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
+                <button class="opportunities-text_btn">Try for free</button>
+            </div>
+
+            <div class="header-opportunities_img">
+                <ul class="opportunities-img_list">
+                    <li class="opportunities-img_item">
+                        <div class="opportunities_img opportunities_img-1"></div>
+                    </li>
+                    <li class="opportunities-img_item">
+                        <div class="opportunities_img opportunities_img-2"></div>
+                    </li>
+                    <li class="opportunities-img_item">
+                        <div class="opportunities_img_photo opportunities_img-3">
+                            <img class="opportunities_photo" src="img/header/line-1_3.png" alt="photo">
+                        </div>
+                    </li>
+                    <li class="opportunities-img_item">
+                        <div class="opportunities_img opportunities_img-4"></div>
+                    </li>
+                    <li class="opportunities-img_item">
+                        <div class="opportunities_img opportunities_img-5"></div>
+                    </li>
+                    <li class="opportunities-img_item">
+                        <div class="opportunities_img_photo opportunities_img-6">
+                            <img class="opportunities_photo" src="img/header/line-2_3.png" alt="photo">
+                        </div>
+                    </li>
+                    <li class="opportunities-img_item">
+                        <div class="opportunities_img opportunities_img-7"></div>
+                    </li>
+                    <li class="opportunities-img_item">
+                        <div class="opportunities_img opportunities_img-8"></div>
+                    </li>
+                    <li class="opportunities-img_item">
+                        <div class="opportunities_img_photo opportunities_img-9">
+                            <img class="opportunities_photo" src="img/header/line-3_3.png" alt="photo">
+                        </div>
+                    </li>
+                </ul> 
+                <div class="opportunities-img_absolute">
+                    <img src="img/header/chart_absolute.png" alt="screen">
+                </div>
+                
+            </div>
+            <div class="opportunities-img_mobile">
+                    <ul class="opportunities-img_list">
+                        <li class="opportunities-img_item">
+                            <div class="opportunities_img opportunities_img-1"></div>
+                        </li>
+                        <li class="opportunities-img_item">
+                            <div class="opportunities_img opportunities_img-2"></div>
+                        </li>
+                        <li class="opportunities-img_item">
+                            <div class="opportunities_img opportunities_img-3">
+                                
+                            </div>
+                        </li>
+                        <li class="opportunities-img_item">
+                            <div class="opportunities_img opportunities_img-4"></div>
+                        </li>
+                        <li class="opportunities-img_item">
+                            <div class="opportunities_img opportunities_img-5"></div>
+                        </li>
+                        <li class="opportunities-img_item">
+                            <div class="opportunities_img opportunities_img-6">
+                                
+                            </div>
+                        </li>
+                        <li class="opportunities-img_item">
+                            <div class="opportunities_img opportunities_img-7"></div>
+                        </li>
+                        <li class="opportunities-img_item">
+                            <div class="opportunities_img opportunities_img-8"></div>
+                        </li>
+                        <li class="opportunities-img_item">
+                            <div class="opportunities_img opportunities_img-9">
+                            
+                            </div>
+                        </li>
+                    </ul> 
+                </div>
+        </section>
+    </header>
+
+    
+
+    <main class="main center">
+        <section class="main_advantages">
+            <h2 class="advantages-title">Main Features</h2>
+            <p class="advantages-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.</p>
+            
+            <ul class="main-advantages_list">
+                <li class="advantages-list_item">
+                    <div class="advantages-item_photo advantages-item_photo-1"></div>
+                    <div class="advantages-item-constent">
+                        <h3 class="advantages-item_subtitle">Monitoring 24/7</h3>
+                        <p class="advantages-item_txt">Lorem ipsum dolor sit amet, consectetur adipis
+                        cing elit. Elementum nisi aliquet volutpat.</p>
+                    </div>
+                </li>
+                <li class="advantages-list_item">
+                    <div class="advantages-item_photo advantages-item_photo-2"></div>
+                    <div class="advantages-item-constent">
+                        <h3 class="advantages-item_subtitle">Widget System</h3>
+                        <p class="advantages-item_txt">Sapien in etiam vitae nibh nunc mattis imperdiet
+                        sed nullam. Vitae et, tortor pulvinar risus pulvinar.</p>
+                    </div>
+                </li>
+                <li class="advantages-list_item">
+                    <div class="advantages-item_photo advantages-item_photo-3"></div>
+                    <div class="advantages-item-constent">
+                        <h3 class="advantages-item_subtitle">Best Performance</h3>
+                        <p class="advantages-item_txt">Lorem ipsum dolor sit amet, consectetur adipis
+                        cing elit. Elementum nisi aliquet volutpat.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main_features">
+
+            <div class="features">
+                <ul class="features_list">
+                    <li class="features-list_item">
+                        <div class="features-item_text">
+                            <h2 class="features-item_title">Automated Reports
+                                & Widget Alerts</h2>
+                            <p class="features-item_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+                        </div>
+                        <div class="features-item_img">
+                            <img class="features-item_photo" src="img/main/features/screen-01.png" alt="screen" height="410">
+                        </div>
+                    </li>
+                    <li class="features-list_item features-list-item_reverse">
+                        <div class="features-item_text">
+                            <h2 class="features-item_title">Fully customizable to address your needs </h2>
+                            <p class="features-item_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+                        </div>
+
+                        <div class="features-item_img">
+                            <img class="features-item_photo" src="img/main/features/screen-02.png" alt="screen" height="410">
+                        </div>                   
+                    </li>
+                    <li class="features-list_item">
+                        <div class="features-item_text">
+                            <h2 class="features-item_title">Pre-built Dashboard Templates</h2>
+                            <p class="features-item_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+                        </div>   
+                        <div class="features-item_img">
+                            <img class="features-item_photo" src="img/main/features/screen-03.png" alt="screen" height="410">
+                        </div>                   
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <section class="price center">
+        <h2 class="price_title">Pricing Plans</h2>
+        <p class="price_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet
+            volutpat pellentesque volutpat est. </p>
+        <ul class="price_list">
+            <li id="price-item_1" class="price-list_item ">
+                <h3 class="price-item_subtitle">Starter</h3>
+                <p class="price-item_user">up to 3 users</p>
+                <h2 class="price-item_title">
+                    <span class="price-item_currency">$</span>
+                    29
+                </h2>
+                <p class="price-item_txt">per month</p>
+                <div class="price_btn">
+                    <button class="price-item_btn">Order</button>
+                </div>
+            </li>
+            <li id="price-item_2" class="price-list_item ">
+                <h3 class="price-item_subtitle">Standard</h3>
+                <p class="price-item_user">up to 20 users</p>
+                <h2 class="price-item_title">
+                    <span class="price-item_currency">$</span>
+                    99
+                </h2>
+                <p class="price-item_txt">per month</p>
+                <div class="price_btn">
+                    <button class="price-item_btn">Order</button>
+                </div>
+            </li>
+            <li id="price-item_3" class="price-list_item ">
+                <h3 class="price-item_subtitle">Premium</h3>
+                <p class="price-item_user">up to 200 users</p>
+                <h2 class="price-item_title">
+                    <span class="price-item_currency">$</span>
+                    299
+                </h2>
+                <p class="price-item_txt">per month</p>
+                <div class="price_btn">
+                    <button class="price-item_btn">Order</button>
+                </div>
+            </li>
+        </ul>
+        <div class="slider ">
+            <div class="slider__list">  
+                <div class="slider__item price-list_item_other">
+                    <div class="slider__item_content ">
+    
+                        <div class="slider__item_text">
+                            <h3 class="price-item_subtitle price-item_other">Starter</h3>
+                            <p class="price-item_user ">up to 3 users</p>
+                            <h2 class="price-item_title price-item_other">
+                                <span class="price-item_currency price-item_other">$</span>
+                                29
+                            </h2>
+                            <p class="price-item_txt">per month</p>
+                            <div class="price_btn">
+                                <button class="price-item_btn price-item_btn_other">Order</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="slider__pointer">
+                        <span class="pointer 0 active " onclick="count = 0, rollSlider()"></span>  
+                        <span class="pointer 1 " onclick="count = 1, rollSlider()"></span>
+                        <span class="pointer 2" onclick="count = 2, rollSlider()"></span>   
+
+                    </div>                
+                </div>
+                <div class="slider__item price-list_item_other">
+                    <div class="slider__item_content">
+    
+                        <div class="slider__item_text">
+                            <h3 class="price-item_subtitle price-item_other">Standard</h3>
+                            <p class="price-item_user ">up to 20 users</p>
+                            <h2 class="price-item_title price-item_other">
+                                <span class="price-item_currency price-item_other">$</span>
+                                99
+                            </h2>
+                            <p class="price-item_txt">per month</p>
+                            <div class="price_btn">
+                                <button class="price-item_btn price-item_btn_other">Order</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="slider__pointer">
+                        <span class="pointer 0  " onclick="count = 0, rollSlider()"></span>  
+                        <span class="pointer 1 active" onclick="count = 1, rollSlider()"></span>
+                        <span class="pointer 2" onclick="count = 2, rollSlider()"></span>   
+
+                    </div>                
+                </div>
+                <div class="slider__item price-list_item_other">
+                    <div class="slider__item_content">
+    
+                        <div class="slider__item_text">
+                            <h3 class="price-item_subtitle price-item_other">Premium</h3>
+                            <p class="price-item_user">up to 200 users</p>
+                            <h2 class="price-item_title price-item_other">
+                                <span class="price-item_currency price-item_other">$</span>
+                                299
+                            </h2>
+                            <p class="price-item_txt">per month</p>
+                            <div class="price_btn">
+                                <button class="price-item_btn price-item_btn_other">Order</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="slider__pointer">
+                        <span class="pointer 0  " onclick="count = 0, rollSlider()"></span>  
+                        <span class="pointer 1 " onclick="count = 1, rollSlider()"></span>
+                        <span class="pointer 2 active" onclick="count = 2, rollSlider()"></span>   
+
+                    </div>                
+                </div>
+
+            </div>
+            <button class="slider__link slider__prev">
+                <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 9.5L2 9.5M2 9.5L9.81132 17M2 9.5L9.81132 2" stroke="#A8B4E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="slider__link slider__next">
+                <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 9.5H25M25 9.5L17.1887 2M25 9.5L17.1887 17" stroke="#A8B4E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="splitter"></div>
+    </section>
+
+    <section class="signup_form center">
+        <div class="form_logos">
+            <h2 class="form-logos_title">See why the world’s best companies use Analytics</h2>
+            <h5 class="form-logo_subtitle">Trusted by</h5>
+            <div class="form-logos_logo">
+                
+                <ul class="form-logos_list">
+                    <li class="logos-list_item">
+                        <a href="#" class="logos-item_link">
+                            <img src="img/form_logos/accenture-4.png" alt="logo" class="logos-link_photo">
+                        </a>
+                    </li>
+                    <li class="logos-list_item">
+                        <a href="#" class="logos-item_link">
+                            <img src="img/form_logos/react.png" alt="logo" class="logos-link_photo">
+                        </a>
+                    </li>
+                    <li class="logos-list_item">
+                        <a href="#" class="logos-item_link">
+                            <img src="img/form_logos/airbnb.png" alt="logo" class="logos-link_photo">
+                        </a>
+                    </li>
+                    <li class="logos-list_item">
+                        <a href="#" class="logos-item_link">
+                            <img src="img/form_logos/sky-4.png" alt="logo" class="logos-link_photo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="form_main">
+            <div class="form_frame">
+                <h3 class="form-frame_title">Sign Up</h3>
+                <form class="form" action="#">
+                    <button type="submit" class="form_btn">Start your free trial</button>
+
+                    <input class="form_input" placeholder="Your primary email" type="email">
+                    <input id="form-input_password" class="form_input " placeholder="Password" type="password">
+                    <input id="form-input_type-password" class="form_input" placeholder="Re-type Password" type="password">
+                </form>
+                <h4 class="form-frame_subtitle">Help us get better</h4>
+                <form>
+                    <div class="form-group">           
+                        <div class="star-rating">
+                            <div class="star-rating__wrap">
+                                <input class="star-rating__input" id="star-5" type="radio" name="rating" value="5">
+                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-5" title="Отлично"></label>
+                                <input class="star-rating__input" id="star-4" type="radio" name="rating" value="4">
+                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-4" title="Хорошо"></label>
+                                <input class="star-rating__input" id="star-3" type="radio" name="rating" value="3">
+                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-3" title="Удовлетворительно"></label>
+                                <input class="star-rating__input" id="star-2" type="radio" name="rating" value="2">
+                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-2" title="Плохо"></label>
+                                <input class="star-rating__input" id="star-1" type="radio" name="rating" value="1">
+                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-1" title="Ужасно"></label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p class="form-frame_txt">
+                    Already have an account? 
+                    <a href="#" class="form-frame-txt_link">Login</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer center">
+        <a href="#" class="footer-link_logo">
+            <svg width="139" height="30" viewBox="0 0 139 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.3812 6.5296C24.6786 2.58665 20.1414 0 15 0C6.71573 0 0 6.71572 0 15C0 16.2052 0.14215 17.3773 0.410585 18.5003L8.04917 10.8617C8.78141 10.1294 9.96859 10.1294 10.7008 10.8617L16.875 17.0358L27.3812 6.5296Z" fill="#8794BA"/>
+                <path d="M29.1641 10.0501L18.2008 21.0133C17.4686 21.7456 16.2814 21.7456 15.5492 21.0133L9.375 14.8392L1.90063 22.3135C4.46662 26.8997 9.37125 30 15 30C23.2843 30 30 23.2843 30 15C30 13.2655 29.7056 11.5998 29.1641 10.0501Z" fill="#8794BA"/>
+                <path d="M47.1062 18.7921H43.2016L42.5197 21.0001H39.4756L43.8104 9.18073H46.4893L50.8566 21.0001H47.7962L47.1062 18.7921ZM43.8835 16.5922H46.4243L45.1498 12.4927L43.8835 16.5922Z" fill="#8794BA"/>
+                <path d="M61.5963 21.0001H58.7632L54.5745 13.6454V21.0001H51.7252V9.18073H54.5745L58.7551 16.5353V9.18073H61.5963V21.0001Z" fill="#8794BA"/>
+                <path d="M70.2578 18.7921H66.3532L65.6713 21.0001H62.6272L66.962 9.18073H69.6409L74.0082 21.0001H70.9478L70.2578 18.7921ZM67.0351 16.5922H69.5759L68.3015 12.4927L67.0351 16.5922Z" fill="#8794BA"/>
+                <path d="M77.7261 18.8083H82.686V21.0001H74.8768V9.18073H77.7261V18.8083Z" fill="#8794BA"/>
+                <path d="M85.9412 14.3111L88.1167 9.18073H91.1933L87.3861 16.7545V21.0001H84.4962V16.7545L80.6971 9.18073H83.7575L85.9412 14.3111Z" fill="#8794BA"/>
+                <path d="M101.478 11.3806H97.931V21.0001H95.0817V11.3806H91.5992V9.18073H101.478V11.3806Z" fill="#8794BA"/>
+                <path d="M105.724 21.0001H102.883V9.18073H105.724V21.0001Z" fill="#8794BA"/>
+                <path d="M117.267 16.998C117.229 17.8206 117.008 18.5485 116.602 19.1817C116.196 19.8095 115.625 20.2965 114.889 20.6429C114.158 20.9892 113.322 21.1624 112.38 21.1624C110.827 21.1624 109.604 20.6564 108.711 19.6444C107.818 18.6324 107.372 17.2037 107.372 15.3583V14.7738C107.372 13.6157 107.572 12.6037 107.973 11.7378C108.378 10.8665 108.96 10.1954 109.718 9.72461C110.475 9.24837 111.352 9.01025 112.348 9.01025C113.782 9.01025 114.935 9.38908 115.806 10.1467C116.677 10.899 117.173 11.938 117.292 13.2639H114.45C114.429 12.5441 114.247 12.0273 113.907 11.7134C113.566 11.3996 113.046 11.2426 112.348 11.2426C111.639 11.2426 111.119 11.5078 110.789 12.0381C110.459 12.5685 110.286 13.4154 110.27 14.579V15.4151C110.27 16.676 110.427 17.5771 110.741 18.1183C111.06 18.6595 111.607 18.9301 112.38 18.9301C113.035 18.9301 113.536 18.7758 113.882 18.4673C114.229 18.1589 114.413 17.6691 114.434 16.998H117.267Z" fill="#8794BA"/>
+                <path d="M124.711 17.8585C124.711 17.4418 124.562 17.1171 124.265 16.8844C123.972 16.6517 123.456 16.4109 122.714 16.1619C121.973 15.913 121.367 15.6722 120.896 15.4395C119.364 14.6872 118.599 13.6536 118.599 12.3385C118.599 11.6837 118.788 11.1073 119.167 10.6094C119.551 10.1061 120.092 9.71649 120.79 9.44049C121.488 9.15908 122.273 9.01837 123.144 9.01837C123.994 9.01837 124.754 9.1699 125.426 9.47296C126.102 9.77602 126.627 10.209 127 10.7718C127.374 11.3292 127.56 11.9678 127.56 12.6876H124.719C124.719 12.2059 124.57 11.8325 124.273 11.5673C123.981 11.3021 123.583 11.1696 123.08 11.1696C122.571 11.1696 122.168 11.2832 121.87 11.5105C121.578 11.7324 121.432 12.0165 121.432 12.3629C121.432 12.6659 121.594 12.9419 121.919 13.1909C122.243 13.4344 122.814 13.6887 123.632 13.9539C124.449 14.2137 125.12 14.4951 125.645 14.7982C126.922 15.5342 127.56 16.5489 127.56 17.8423C127.56 18.8759 127.171 19.6877 126.392 20.2776C125.612 20.8675 124.543 21.1624 123.185 21.1624C122.227 21.1624 121.359 20.9919 120.579 20.651C119.805 20.3046 119.221 19.8338 118.826 19.2385C118.436 18.6378 118.241 17.9478 118.241 17.1685H121.099C121.099 17.8017 121.261 18.2698 121.586 18.5729C121.916 18.8705 122.449 19.0193 123.185 19.0193C123.656 19.0193 124.027 18.9192 124.297 18.719C124.573 18.5133 124.711 18.2265 124.711 17.8585Z" fill="#8794BA"/>
+                </svg>
+        </a>
+
+        <div class="footer_menu">
+            <ul class="footer-menu_list">
+                <li class="footer-menu_item">
+                    <a href="#" class="footer-menu-item_link">Product</a>
+                </li>
+                <li class="footer-menu_item">
+                    <a href="#" class="footer-menu-item_link">Pricing Plans</a>
+                </li>
+                <li class="footer-menu_item">
+                    <a href="#" class="footer-menu-item_link">FAQ</a>
+                </li>
+                <li class="footer-menu_item">
+                    <a href="#" class="footer-menu-item_link">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer_networks">
+            <ul class="footer-networs_list">
+                <li class="footer-networks_item">
+                    <a href="#" class="footer-networks-item_link">
+                        <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 6.66667H0V10H2.5V20H6.66667V10H9.66667L10 6.66667H6.66667V5.25C6.66667 4.5 6.83333 4.16667 7.58333 4.16667H10V0H6.83333C3.83333 0 2.5 1.33333 2.5 3.83333V6.66667Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-networks_item">
+                    <a href="#" class="footer-networks-item_link">
+                        <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.7392 20C17.0259 20 22.1045 12.3061 22.1045 5.63472C22.1045 5.41612 22.1 5.19865 22.0899 4.98202C23.0757 4.26942 23.9327 3.37993 24.6086 2.36786C23.704 2.76978 22.7306 3.04043 21.7093 3.16246C22.7516 2.53747 23.5521 1.54834 23.9296 0.369453C22.9539 0.947983 21.8736 1.36838 20.7238 1.59509C19.8021 0.613796 18.49 0 17.0382 0C14.2497 0 11.9885 2.26122 11.9885 5.04835C11.9885 5.44467 12.033 5.8298 12.1192 6.19953C7.92337 5.98878 4.20253 3.97946 1.71264 0.924752C1.27853 1.67066 1.02859 2.53775 1.02859 3.46222C1.02859 5.21376 1.92004 6.76015 3.27554 7.66503C2.44735 7.63956 1.66926 7.41173 0.988846 7.03332C0.987727 7.05431 0.987727 7.07558 0.987727 7.09769C0.987727 9.54308 2.72835 11.5846 5.03827 12.0472C4.61424 12.1628 4.1681 12.225 3.7074 12.225C3.38217 12.225 3.0659 12.1925 2.7583 12.134C3.40093 14.1397 5.26498 15.5996 7.47498 15.6407C5.74667 16.9951 3.5697 17.802 1.20436 17.802C0.797123 17.802 0.395203 17.7788 0 17.7321C2.23435 19.164 4.88741 20 7.7392 20Z" />
+                        </svg>                           
+                    </a>
+                </li>
+                <li class="footer-networks_item">
+                    <a href="#" class="footer-networks-item_link">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.6084 1.83333C13.2751 1.83333 13.6084 1.83333 14.6917 1.91667C17.4417 2 18.6917 3.33333 18.7751 6C18.8584 7.08333 18.8584 7.33333 18.8584 10C18.8584 12.6667 18.8584 13 18.7751 14C18.6917 16.6667 17.3584 18 14.6917 18.0833C13.6084 18.1667 13.3584 18.1667 10.6084 18.1667C7.94173 18.1667 7.6084 18.1667 6.6084 18.0833C3.8584 18 2.6084 16.6667 2.52507 14C2.44173 12.9167 2.44173 12.6667 2.44173 10C2.44173 7.33333 2.44173 7 2.52507 6C2.6084 3.33333 3.94173 2 6.6084 1.91667C7.6084 1.83333 7.94173 1.83333 10.6084 1.83333ZM10.6084 0C7.8584 0 7.52506 0 6.52506 0.0833333C2.8584 0.25 0.858398 2.25 0.691732 5.91667C0.608398 6.91667 0.608398 7.25 0.608398 10C0.608398 12.75 0.608398 13.0833 0.691732 14.0833C0.858398 17.75 2.8584 19.75 6.52506 19.9167C7.52506 20 7.8584 20 10.6084 20C13.3584 20 13.6917 20 14.6917 19.9167C18.3584 19.75 20.3584 17.75 20.5251 14.0833C20.6084 13.0833 20.6084 12.75 20.6084 10C20.6084 7.25 20.6084 6.91667 20.5251 5.91667C20.3584 2.25 18.3584 0.25 14.6917 0.0833333C13.6917 0 13.3584 0 10.6084 0ZM10.6084 4.83333C7.77506 4.83333 5.44173 7.16667 5.44173 10C5.44173 12.8333 7.77506 15.1667 10.6084 15.1667C13.4417 15.1667 15.7751 12.8333 15.7751 10C15.7751 7.16667 13.4417 4.83333 10.6084 4.83333ZM10.6084 13.3333C8.77506 13.3333 7.27506 11.8333 7.27506 10C7.27506 8.16667 8.77506 6.66667 10.6084 6.66667C12.4417 6.66667 13.9417 8.16667 13.9417 10C13.9417 11.8333 12.4417 13.3333 10.6084 13.3333ZM15.9417 3.5C15.2751 3.5 14.7751 4 14.7751 4.66667C14.7751 5.33333 15.2751 5.83333 15.9417 5.83333C16.6084 5.83333 17.1084 5.33333 17.1084 4.66667C17.1084 4 16.6084 3.5 15.9417 3.5Z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
